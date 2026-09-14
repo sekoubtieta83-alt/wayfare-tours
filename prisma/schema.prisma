@@ -1,0 +1,44 @@
+// Prisma schema for the tour booking app.
+// Local dev uses SQLite (file-based, zero setup).
+// For production on Vercel, switch provider to "postgresql" and set
+// DATABASE_URL to a Postgres connection string (see README.md).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Activity {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  city        String
+  country     String
+  category    String
+  description String
+  highlights  String    // stored as JSON string (SQLite has no native array type)
+  imageUrl    String
+  price       Float     // price per person, in USD
+  durationHrs Float
+  rating      Float     @default(4.8)
+  reviewCount Int       @default(0)
+  bookings    Booking[]
+  createdAt   DateTime  @default(now())
+}
+
+model Booking {
+  id             String   @id @default(cuid())
+  activity       Activity @relation(fields: [activityId], references: [id])
+  activityId     String
+  date           DateTime
+  participants   Int
+  customerName   String
+  customerEmail  String
+  totalPrice     Float
+  status         String   @default("confirmed") // confirmed | cancelled
+  createdAt      DateTime @default(now())
+}
