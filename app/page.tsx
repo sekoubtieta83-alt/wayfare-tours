@@ -25,14 +25,25 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Hero with search */}
-      <section className="relative">
+      {/* Hero with background video */}
+      <section className="relative overflow-hidden">
         <div className="absolute inset-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/hero-ghana-poster.jpg"
+            className="h-full w-full object-cover motion-reduce:hidden"
+          >
+            <source src="/hero-ghana.mp4" type="video/mp4" />
+          </video>
+          {/* Static fallback for reduced-motion viewers and if the video fails to load */}
           <Image
             src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=1600&q=80"
             alt="Savannah landscape in northern Ghana"
             fill
-            className="object-cover"
+            className="hidden object-cover motion-reduce:block"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-forest-900/90 via-forest-900/70 to-forest-900/30" />
