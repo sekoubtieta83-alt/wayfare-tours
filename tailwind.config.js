@@ -4,22 +4,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        plum: {
-          50: "#f6eef4",
-          100: "#ecd9e6",
-          400: "#7a3a67",
-          600: "#54204a",
-          800: "#37142f",
-          900: "#240D1F",
+        // Ghana flag inspired palette
+        forest: {
+          50: "#eef5ef",
+          100: "#d6e8d9",
+          400: "#4a8c5a",
+          600: "#2f6b3f",
+          800: "#1b4529",
+          900: "#12301c",
         },
-        gold: {
-          300: "#e9c98a",
-          400: "#d9ab54",
-          500: "#c1913c",
+        kente: {
+          300: "#f2cf6b",
+          400: "#e8b731",
+          500: "#cf9c18",
+          600: "#a97c0f",
         },
-        sand: {
-          50: "#fbf7f0",
-          100: "#f3ead9",
+        clay: {
+          400: "#d95b43",
+          500: "#c0392b",
+          600: "#9c2b1f",
+        },
+        cream: {
+          50: "#fdfaf3",
+          100: "#f7f0e2",
+          200: "#ece0c9",
+        },
+        ink: {
+          700: "#3a3a36",
+          900: "#1a1a17",
         },
       },
       fontFamily: {

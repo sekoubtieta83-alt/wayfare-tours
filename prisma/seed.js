@@ -23,11 +23,11 @@ const activities = [
     reviewCount: 214,
   },
   {
-    slug: "cape-coast-castle-history-tour",
+    slug: "cape-coast-castle-heritage-tour",
     title: "Cape Coast Castle Heritage Tour",
     city: "Cape Coast",
     country: "Ghana",
-    category: "History & Culture",
+    category: "History & Heritage",
     description:
       "A guided walk through Cape Coast Castle with a historian, covering its role in the transatlantic slave trade and its significance today.",
     highlights: JSON.stringify([
@@ -63,64 +63,104 @@ const activities = [
     reviewCount: 178,
   },
   {
-    slug: "lisbon-tram-28-walking-tour",
-    title: "Lisbon Tram 28 & Alfama Walking Tour",
-    city: "Lisbon",
-    country: "Portugal",
+    slug: "kumasi-kente-weaving-workshop",
+    title: "Kumasi Kente Weaving Workshop",
+    city: "Kumasi",
+    country: "Ghana",
+    category: "Culture & Crafts",
+    description:
+      "Sit at the loom with a master weaver in Bonwire, learn what the patterns mean, and weave a strip of kente to take home with you.",
+    highlights: JSON.stringify([
+      "Hands-on session at the loom",
+      "Take home the strip you weave",
+      "Visit to Manhyia Palace grounds",
+    ]),
+    imageUrl:
+      "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=1200&q=80",
+    price: 48,
+    durationHrs: 4,
+    rating: 4.9,
+    reviewCount: 142,
+  },
+  {
+    slug: "mole-national-park-safari",
+    title: "Mole National Park Walking Safari",
+    city: "Damongo",
+    country: "Ghana",
+    category: "Wildlife & Safari",
+    description:
+      "Track elephants on foot with an armed park ranger across the savannah, then watch the waterhole from the escarpment as the herds come to drink.",
+    highlights: JSON.stringify([
+      "Guided walking safari with a park ranger",
+      "Elephant, antelope and warthog sightings",
+      "Sunset viewing over the waterhole",
+    ]),
+    imageUrl:
+      "https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=1200&q=80",
+    price: 95,
+    durationHrs: 6,
+    rating: 4.8,
+    reviewCount: 203,
+  },
+  {
+    slug: "wli-waterfalls-volta-day-trip",
+    title: "Wli Waterfalls & Volta Region Day Trip",
+    city: "Hohoe",
+    country: "Ghana",
+    category: "Nature & Outdoors",
+    description:
+      "Hike through cocoa farms and rainforest to the tallest waterfall in West Africa, swim in the plunge pool, and watch the fruit bat colony overhead.",
+    highlights: JSON.stringify([
+      "Guided hike to the Lower Falls",
+      "Swim beneath the waterfall",
+      "Lunch in a village on the Volta",
+    ]),
+    imageUrl:
+      "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1200&q=80",
+    price: 72,
+    durationHrs: 8,
+    rating: 4.7,
+    reviewCount: 168,
+  },
+  {
+    slug: "busua-surf-lesson-beach-day",
+    title: "Busua Beach Surf Lesson",
+    city: "Busua",
+    country: "Ghana",
+    category: "Beach & Water",
+    description:
+      "Learn to surf on Ghana's friendliest beach break with local instructors, then eat grilled fish on the sand as the fishing boats come in.",
+    highlights: JSON.stringify([
+      "Two-hour lesson, board included",
+      "Beginner-friendly beach break",
+      "Fresh grilled fish lunch",
+    ]),
+    imageUrl:
+      "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&q=80",
+    price: 40,
+    durationHrs: 3,
+    rating: 4.8,
+    reviewCount: 97,
+  },
+  {
+    slug: "jamestown-photo-walk-accra",
+    title: "Jamestown Photography Walk",
+    city: "Accra",
+    country: "Ghana",
     category: "City Tours",
     description:
-      "Ride the iconic yellow tram through Lisbon's steepest hills, then wander Alfama's alleys with a guide who knows every hidden viewpoint.",
+      "Walk the old colonial quarter and fishing harbour with a Ghanaian photographer, from the lighthouse to the boxing gyms Jamestown is known for.",
     highlights: JSON.stringify([
-      "Skip-the-line tram boarding",
-      "Fado music stop included",
-      "Ends at a miradouro sunset view",
+      "Led by a working photographer",
+      "Climb the Jamestown lighthouse",
+      "Portraits and street shooting tips",
     ]),
     imageUrl:
-      "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1200&q=80",
-    price: 39,
+      "https://images.unsplash.com/photo-1519659528534-7fd733a832a0?w=1200&q=80",
+    price: 38,
     durationHrs: 3,
-    rating: 4.7,
-    reviewCount: 892,
-  },
-  {
-    slug: "kyoto-bamboo-grove-tea-ceremony",
-    title: "Arashiyama Bamboo Grove & Tea Ceremony",
-    city: "Kyoto",
-    country: "Japan",
-    category: "Culture & Traditions",
-    description:
-      "Walk the famous bamboo path at dawn, then take part in a traditional tea ceremony led by a certified tea master in a 200-year-old machiya house.",
-    highlights: JSON.stringify([
-      "Private tea ceremony for your group",
-      "Early access before tour buses arrive",
-      "Kimono rental available on request",
-    ]),
-    imageUrl:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200&q=80",
-    price: 74,
-    durationHrs: 3.5,
-    rating: 5.0,
-    reviewCount: 130,
-  },
-  {
-    slug: "santorini-catamaran-sunset-cruise",
-    title: "Santorini Catamaran Sunset Cruise",
-    city: "Santorini",
-    country: "Greece",
-    category: "Boat Tours",
-    description:
-      "Sail past the caldera's red and white cliffs, swim at two secluded coves, and watch the sunset from the water with a Greek dinner on board.",
-    highlights: JSON.stringify([
-      "BBQ dinner and open bar included",
-      "Two swim stops",
-      "Small-group catamaran, max 20 guests",
-    ]),
-    imageUrl:
-      "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1200&q=80",
-    price: 129,
-    durationHrs: 5,
     rating: 4.9,
-    reviewCount: 1042,
+    reviewCount: 124,
   },
 ];
 
@@ -129,7 +169,7 @@ async function main() {
   for (const a of activities) {
     await prisma.activity.upsert({
       where: { slug: a.slug },
-      update: {},
+      update: a,
       create: a,
     });
   }
